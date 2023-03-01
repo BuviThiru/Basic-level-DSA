@@ -1,0 +1,93 @@
+
+// ###############  .map #########
+
+let num = [10, 20 , 30, 40, 50]
+// let num1 = num. map (n => n+5)
+// console.log (num1)
+// let num2 = num.map(n=> n/2)
+// console.log(num2)
+
+// let singular = ["flower", "pen", "key", "ball"]
+// let plural = singular.map(n=> n+"s")
+// console.log(plural)
+
+
+//################  filter   ###########
+// var reducedOutput = num.filter(int => int >= 30) //returns 30,40,50
+// var reducedOutput = num.filter(int => int%3==0) //returns 30
+// console.log(reducedOutput)
+
+var inputArr = [
+    { "name": "Shanghai", "population": 2430000 },
+    { "name": "Los Angeles", "population": 372621 },
+    { "name": "New Delhi", "population": 2180000 },
+    { "name": "Mumbai", "population": 1840000 },
+    { "name": "Chicago", "population": 265598 },
+    { "name": "Houston", "population": 2100263 },
+   ];
+//    var outputArr = inputArr.filter( (city) => city.population>= 500000);
+//    console.log(outputArr);
+
+
+for (i=0; i<=inputArr.length-1; i++)
+if (inputArr[i].population <500000 ){
+   console.log(inputArr[i])
+}
+
+   //############# .reduce #############
+
+   // var sum = num.reduce((acc, curr ) =>acc+curr)
+   // console.log(sum)
+
+   // var sum5 = num.reduce((acc, curr) =>acc + curr,5)
+   // console.log(sum5)
+
+   // var average = num.reduce((acc,curr) =>(acc+curr))/num.length
+   // console.log(num.length)
+   // console.log (average)
+
+//########### .forEach ###########
+num.forEach (val => console.log(val))
+num.forEach (val => console.log(val*10))
+
+
+// //############# sort ############
+// let numbers = [4, 12, 2, 45, 36, 16, 700]
+// // Sorting from Lowest to highest
+// let lowestToHighest = numbers.sort ((a, b) => a - b);
+// console.log (lowestToHighest)
+
+// //Sorting from Highest to lowest
+// let highestTOLowest = numbers.sort ( (a, b) => b-a);
+// console.log(highestTOLowest)
+
+// let num3 = [34, 56, 12, 78, 95, 26 ,8]
+// let assOrder = num3.sort((a,b) => a-b)
+// console.log(assOrder)
+
+// let desorder = num3.sort((a, b) => b-a)
+// console.log (desorder)
+
+// //########  split #########
+// let flower = "sunflower"
+// const splitFlower = flower.split("")
+// console.log (splitFlower)
+
+
+//######### slice ########### returns the new array with sliced part
+// let flowers = ["rose", "lily", "jasmine", "sunflower", "irish", "lotus"]
+// const sliceflower = flowers.slice(4)
+// console.log (sliceflower)
+
+// const sliceflower1 = flowers.slice(2,4)
+// console.log(sliceflower1)
+
+
+let n = [10,20,30,40,50,60,70,80,90,100]
+const n1 = n.slice (5)
+console.log(n1)
+const n2 = n.slice(0,3)
+console.log(n2)
+const n3 = n.slice(2,5)
+console.log(n3)
+console.log(n)

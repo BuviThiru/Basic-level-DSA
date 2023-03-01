@@ -1,0 +1,43 @@
+// Requirements: "Write a method that accepts an array of integers and updates every element with multiplication of
+// previous and next elements.8
+// 8
+// Note:7
+// First element is replaced by multiplication of first and second. 7
+// Last element is replaced by multiplication of last and second last.8
+// 2.Move all negative numbers to the end and positive to the beginning of the array without using any
+// predefined sorting method 8"
+
+let a = 1
+let product = 1
+let productArray = []
+let simpleArray = [2, 4, 6, 5, 3, 7, 8]
+for (i = 0; i < simpleArray.length; i++) {
+    if (i + 1 == simpleArray.length) 
+        { product = a * simpleArray[i] }
+    else {
+        product = a * simpleArray[i] * simpleArray[i + 1]
+        a = simpleArray[i]
+
+    }
+    productArray.push(product)
+
+
+}
+console.log(productArray)
+
+
+
+
+
+
+// let mixedArray = [2,-5,8,-3,4,9,-7, 3];
+// let sortedArray = [ ];
+
+// for (let i = 0; i< mixedArray.length; i++)
+// if (mixedArray[i]<0){
+//  sortedArray. push(mixedArray[i])
+// }
+// else {
+//      sortedArray. unshift(mixedArray[i])
+//     }
+// console.log (sortedArray)

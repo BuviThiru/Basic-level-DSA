@@ -1,0 +1,352 @@
+/* Arrays
+const friend1 = " abhishek";
+const friend2 =" nikhil";
+const friend3 =" satish";
+const friend = ["abhishek","nikhil","satish","riya"];
+for(let i=0;i<friend.length;i++)
+{
+    console.log(friend[i]);
+}
+
+
+
+const years=[ 1990, 1967, 2002,2010,2018];
+function calc_Age(birth_year)
+{
+    return 2022-
+    birth_year;
+}
+for(let i=0;i<years.length;i++)
+{
+ console.log(calc_Age(years[i]));
+}
+
+
+
+
+// problem -- find sum of even numbers
+const num = [12, 45, 67, 11, 44, 23]
+let sum = 0;
+for (let i = 0; i < num.length; i++) {
+    if (num[i] % 2 == 0) {
+        sum = sum + num[i];
+    }
+}
+console.log(sum);*/
+
+
+
+
+
+
+//objects
+//what is objects?
+//create objects.
+//access properties
+//methods->>Object.keys(),Object.values(),Object.entries(),
+//looping in object
+//function in objects;
+
+// const obj={ 
+// //literal way to create objects
+// name:"refrigirator",
+// price:35000,
+// brand:"samsung",
+// }
+function person (name,age){  // constructor function
+this.name = name
+this.age = age
+
+}
+
+const person1 =new person("asdsf",65);
+const person2 =new person("grgr",78);
+console.log(person);
+console.log(person1);
+console.log(person2);
+
+
+//using . operator
+
+
+
+
+// obj.reviews="good";
+// obj.reviws="good";
+// obj.revis="good";
+// obj.revs="good";
+
+
+// //deleting properety
+// delete obj.price;
+
+// console.log(obj)
+
+/// using brackets
+// console.log(obj["name"])
+
+// var a="name"
+// console.log(obj.a);//undefined -->bydefault values
+// console.log(obj[a])  obj[a]
+
+//1. Object.keys();
+// console.log(Object.keys(obj))
+
+//     // name==>refrigirator,
+//     // brand==>samsung,
+// var a=Object.keys(obj);
+// var l=a.length;
+//     for(let i=0;i<l;i++){
+//         console.log(a[i]+"==>"+obj[a[i]])
+
+//     }
+
+// 2. Object.values();
+// console.log(Object.values(obj))//['refrigirator',"samsung"....]
+
+// 3.) Object.entries();
+
+
+
+// 1.)console.log(Object.entries(obj))
+
+
+//for in loop
+
+// for( const valdsdgg in obj){
+//     console.log(valdsdgg+"==>"+obj[valdsdgg]);
+
+// }
+
+
+// Remove the duplicate element in the array
+// Input: const arr = ['a', 'b', 'c', 'a', 'c', 'd', 'a'];
+// Output: [ 'a', 'b', 'c', 'd' ]
+// const arr = ['a', 'b', 'c', 'a', 'c', 'd', 'a'];
+// const ans={
+//     a:2,
+//     b:0,
+//     c:2,
+//     d:1
+
+// }
+// const ans={}
+// ans={
+//     // a:0->1->2
+        //  b:0
+        //c:0-->1
+        //d:0
+
+// }
+// function removescs(){
+
+
+//     for(let i=0;i<arr.length;i++){ i=0;
+//         if(obj[arr[i]]){ //obj[arr[0]]  obj[a] i=1,obj[arr[1]]
+//             obj[arr[i]]+=1;
+//         }
+//         else{
+//             obj[arr[i]]=0;// a=0
+//         }
+
+//     }
+
+// }
+
+// const ans={
+//     a:2,
+//     b:0,
+//     c:2,
+//     d:0
+
+
+// }
+// const obj = {};
+// const removeDuplicate = (arr) => {
+   
+//     arr.map(item => {
+//         if (obj[item])//obj[a]
+//         { console.log("if")
+//             obj[item] += 1;}
+           
+//         else{
+//             console.log("else")
+//             obj[item] = 0;}
+            
+//     })
+
+//     console.log(obj)
+    
+// }
+// console.log(obj)
+// // console.log(Object.keys(obj))
+// const arr = ['a', 'b', 'c', 'a', 'c', 'd', 'a'];
+// console.log(removeDuplicate(arr));
+
+// var a;
+// console.log(a);
+
+
+
+
+
+//@@@@@@@@@@@@@@@@@@@@@@class 2@@@@@@@@@@@@@@@@@@@@@@@@@@@
+// ​//object functions
+//Object.freeze(),Object.seal(),Object.sealed(),Object.is(),
+//array methods ->push,unshft,pop,shift,indexOf,reverse,splice;
+//arrow functions
+//higher order array functions =>forEach,map,filter,reduce,sort;
+​
+// const products=[
+// {name:"pen",price:2000,brand:"Reynolds",category:"stationary"},
+// {name:"laptop",price:42000,brand:"Asus",category:"electronics"},
+// {name:"phone",price:20000,brand:"Apple",category:"electronics"},
+// {name:"football",price:4000,brand:"Nivea",category:"sports"},
+// {name:"pencil",price:100,brand:"Natraj",category:"stationary"},
+// {name:"refrigirator",price:32000,brand:"samsung",category:"electronics"},
+// {name:"Bat",price:10000,brand:"SS",category:"sports"},
+// ]
+​
+​
+​
+​
+// const obj={
+// name:"vijsay malya",
+// accountNo:435465786,
+// balance:900000000000,
+// loancredited:99999999999999,
+// }
+​
+// ->>>// Object.freeze(obj);
+​
+// Object.freeze(obj);
+​
+​
+// obj.balance=9900000000000;
+// delete obj.balance;
+​
+// obj.phone=098095745;
+// console.log(obj);
+​
+// ->>>// // Object.seal(obj);
+​
+// Object.seal(obj);
+// obj.name="Shubham";
+// delete obj.balance;
+​
+// obj.phone=098095745;
+// console.log(obj);
+​
+​
+// object.is()
+​
+// var a=10;
+// var b=10;
+​
+// // console.log(Object.is(a,b))
+​
+​
+//array methods ->push,unshft,pop,shift,indexOf,reverse,splice;
+​
+​
+​
+//push
+​
+// arr.push(8);
+​
+//unshift
+// arr.unshift(0)
+​
+​
+// pop
+// arr.pop();
+​
+//shift
+// arr.shift();
+​
+​
+//indexOf()
+// console.log(arr.indexOf(1))
+// console.log(arr)
+​
+​
+// const ar=[1,2,2,3,4,5,5];
+// const ans=[];
+// for(let i=0;i<ar.length;i++){ //i=0 i=1 i=2
+// if(ar.indexOf(ar[i])!==i){ //ar[i]  arr.indexof(1)=0
+// // ar.indexOf(2)=1
+// // ar.indexof(2)=1
+// }
+// else{
+//     ans.push(ar[i]);// 1 2
+// }
+​
+​
+// }
+// console.log(ans)
+// const num=[1,2,3,4,4,4,5,6,7]
+​
+// //reverse
+// num.reverse();
+// console.log(num.splice(2,0,"hi",6,8))
+​
+​
+// console.log(num)
+​
+​
+// function addd(a,b){  //traditionla way
+// return a+100;
+// }
+​
+// let add=a=>a+100;
+// let addd=(a,b)=>a+100;//arrow way of definig fucntions
+​
+//higher order array functions =>forEach,map,filter,reduce,sort;
+​
+// const products=[
+// {name:"pen",price:2000,brand:"Reynolds",category:"stationary"},
+// {name:"laptop",price:42000,brand:"Asus",category:"electronics"},
+// {name:"phone",price:20000,brand:"Apple",category:"electronics"},
+// {name:"football",price:4000,brand:"Nivea",category:"sports"},
+// {name:"pencil",price:100,brand:"Natraj",category:"stationary"},
+// {name:"refrigirator",price:32000,brand:"samsung",category:"electronics"},
+// {name:"Bat",price:10000,brand:"SS",category:"sports"},
+// ]
+​
+// //for-each -->does not return anythinh
+// products.forEach(function(item){
+// console.log(item)
+// })
+​
+// products.forEach(item=>console.log(item))
+​
+//map
+​
+// const trrr=products.map(function(item){
+// return item.price
+// })
+// console.log(trrr)
+​
+​
+// const trrr=products.map(item=> item.price)
+// console.log(trrr)
+​
+​
+//filter
+// const trr=products.filter(function(item){
+// return item.price>2000 && item.price<=20000
+// })
+// console.log(trr);
+​
+​
+// const trr=products.filter(item=>
+//      item.price>2000 && item.price<=20000
+//     )
+//     // console.log(trr);
+​
+    //reduce
+​
+    // const ans=trr.reduce(function(total,item){
+    //     return total=total+item.price;
+    // },0)
+    // console.log(ans);

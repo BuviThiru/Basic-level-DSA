@@ -1,0 +1,84 @@
+const person = {
+    fname: "Sharvin",
+    lname: "Vinoth",
+    age: 3.5,
+    sex: "Male",
+    fathername: "Vinoth Kumar",
+    mothername: "Buvaneshwari",
+    sibling: "Ezhil V",
+    DOB: "23 - 10 - 2018",
+    prof : "playschool Student",
+    schooling : function(){
+        return this.profS
+    }
+}
+// console.log(Object.keys(person))
+// console.log(Object.values(person))
+// console.log(Object.entries(person))
+// console.log (person["fname"]);
+// console.log (person.fname)
+
+// console.log (person.schooling)//check this
+ 
+// //Object.key
+// console.log (Object.keys(person))
+// const keyarray = (Object.keys(person))
+// let l = keyarray.length
+// console.log(keyarray)
+// console.log(l)
+// for (let i=0; i<l; i++){
+//     console.log(keyarray[i] + "==>" + person[keyarray[i]])
+// }
+
+// //Object.values
+// console.log(Object.values(person))
+
+//Object.entities
+// console.log(Object.entries(person))
+
+
+//for ....in loop
+
+// for (const key in person) {
+//     console.log (key + "==>" + person[key])
+// }
+
+// let employee = {
+//     name : "Kumar",
+//     age : 28,
+//     experience : 3,
+//     kids:{
+//         elder: "Naveen" ,
+//         yonger : "Nithin"
+//     }
+// }
+
+//     for(let key in employee.kids){
+//         // console.log(key)
+//         // console.log(employee[key])//gives the value of key..key is written in []because its not the part of object
+//         // console.log(key)
+//         console.log(employee. kids[key])
+
+//     }
+
+// Frequency map:
+let arr = [2,6,9,1,1,1,4,2,9]
+let obj = {}
+for(let i =0;i<arr.length;i++){ 
+if(obj[arr[i]]){ obj[arr[i]]++}
+else{obj[arr[i]]=1}  }  
+console.log(obj)
+
+// ############### Frequency map with index
+//  let arr1 = [2,3,6,7,2,3,2,7,1]
+//  let obj1 = {}
+//  for(let i=0;i<arr1.length;i++){
+//   if(!obj1[arr1[i]]){
+//     obj1[arr1[i]] = { value: 1,index: [i]}
+//   }
+//   else{
+//     obj1[arr1[i]].value++
+//     obj1[arr1[i]].index.push(i)
+//   }
+//  }
+//  console.log(obj1)

@@ -1,0 +1,42 @@
+var zeromatrix = [ [0,0,0,0],
+                   [0,0,0,0],
+                   [0,0,0,0],
+                   [0,0,0,0]]     
+function mineExploder(minerow,minecol){
+  
+  //Iterate through elements of zero-matrix
+  for(rowindex=0;rowindex<zeromatrix.length;rowindex++){
+    for(colindex=0;colindex<zeromatrix.length;colindex++){
+  				if(rowindex === minerow && colindex === minecol){
+            //if condition is true then apply -1 to the mine-value
+            zeromatrix[rowindex][colindex] = -1;
+            
+            //also change values around the mine, add +1 to those around 
+            // check for outer-boundary
+            
+            if(rowindex === 0){ //first row 
+              
+              
+            }
+            if(rowindex === zeromatrix.length-1){ //last row
+              
+            }
+            if(colindex === 0){ //first column
+              
+            }
+            if(colindex === zeromatrix.length-1){ //last column
+              
+            }
+            
+            //if mine is in the middle then add 1 to all the elements around it
+            if(rowindex > 0 && rowindex < zeromatrix.length-1 && colindex > 0 && colindex < zeromatrix.length-1 ){
+              
+            }
+            
+          }
+      
+      
+    }
+  }
+  console.log(zeromatrix)
+}mineExploder(2,2)
