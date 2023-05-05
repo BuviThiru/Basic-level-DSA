@@ -11,7 +11,7 @@ function checkIfReverseSubarraySortsArray(arr){
     // 1,2,2,3,4,5,7
     // 1,2,3,4,5,7
 
-    console.log(temp);
+    console.log(arr,temp);
 
     for(start=0; start<arr.length; start++) {
         if(arr[start] != temp[start]) {
@@ -24,19 +24,15 @@ function checkIfReverseSubarraySortsArray(arr){
             break;
         }
     }
-
-    if(start >= end) {
-        return true;
-    }
-
-    do{
-        if(arr[start] < arr[start+1]) {
-            return false;
-        }
-    }while(start != end)
-
-    return true;
+    if(start==end) return true
+// console.log(start,end)
+while(start<end){
+    // console.log("Values",arr[start],arr[start+1])
+    if(arr[start]<arr[start+1]){ return false}
+    start++
+}
+ return true 
 }
 
-let subSorted= [1,2,3,5,4,6];
+let subSorted= [1,2,3,4,5];
 console.log("checkIfReverseSubarraySortsArray "+checkIfReverseSubarraySortsArray(subSorted));

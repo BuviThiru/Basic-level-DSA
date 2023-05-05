@@ -219,7 +219,7 @@
 //     if(arr[end]>pivot){end--}
 //     if(arr[start]>=pivot) {let temp = arr[start]; arr[start]= arr[end];arr[end]=temp}
 //     }
-  
+   
 //     return start
 // }
 
